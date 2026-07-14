@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="SORA creates timeless contemporary clothing inspired by architecture, minimalism and natural textures.">
+  <meta name="theme-color" content="#0b0b0b">
+  <meta property="og:title" content="SORA — Timeless Contemporary Fashion">
+  <meta property="og:description" content="Timeless elegance. Modern simplicity.">
+  <meta property="og:image" content="./assets/hero.webp">
+  <meta property="og:type" content="website">
+  <title>SORA — Timeless Contemporary Fashion | Editorial Store</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./site.webmanifest">
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="./js/app.js"></script>
+</head>
+<body>
+<div class="preloader" aria-hidden="true"><span>SORA</span></div>
+<div class="cursor" aria-hidden="true"></div>
+<header class="site-header" data-header>
+  <a class="logo" href="#top" aria-label="SORA home">SORA</a>
+  <nav class="desktop-nav" aria-label="Primary navigation">
+    <a href="#catalog">Shop</a><a href="#collections">Collections</a>
+    <button type="button" data-modal-open="story">About</button>
+    <button type="button" data-modal-open="journal">Journal</button>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <button class="icon-btn" aria-label="Search">⌕</button>
+    <button class="wishlist-btn" data-wishlist-open aria-label="Open wishlist">Saved <span data-wishlist-count>0</span></button>
+    <button class="bag-btn" data-cart-open aria-label="Open bag">Bag <span data-cart-count>0</span></button>
+    <button class="menu-btn" type="button" data-menu-button aria-expanded="false" aria-label="Open menu"><span></span><span></span></button>
+  </div>
+</header>
+<aside class="mobile-menu" data-mobile-menu aria-hidden="true">
+  <nav><a href="#catalog">Shop</a><a href="#collections">Collections</a><button data-modal-open="story">About</button><button data-modal-open="journal">Journal</button><a href="#contact">Contact</a></nav>
+</aside>
+<main id="top">
+  <section class="hero hero--signature" aria-labelledby="hero-title" data-hero>
+    <img class="hero-image" src="./assets/hero.webp" alt="SORA campaign portrait" fetchpriority="high">
+    <div class="hero-shade"></div>
+    <div class="hero-grain" aria-hidden="true"></div>
+
+    <p class="hero-season">SORA / 2026</p>
+    <h1 class="hero-wordmark" id="hero-title" aria-label="SORA">SORA</h1>
+
+    <div class="hero-content">
+      <p class="hero-kicker">New Editorial</p>
+      <h2>Timeless elegance.<br>Modern simplicity.</h2>
+      <p class="hero-copy">A study in quiet confidence, precise tailoring and enduring form.</p>
+      <a class="hero-link" href="#catalog" data-shop-button>Shop Collection <span>↗</span></a>
+    </div>
+
+    <div class="hero-index" aria-label="Campaign slide 1 of 3">
+      <span>01</span><i></i><span>03</span>
+    </div>
+
+    <a class="hero-scroll" href="#benefits" aria-label="Scroll to discover">
+      <i></i><span>Scroll to discover</span><b>⌄</b>
+    </a>
+  </section>
+
+  <section class="benefits" id="benefits" aria-label="Store benefits">
+    <div><b>01</b><p><strong>Free Shipping</strong><span>On orders over $150</span></p></div>
+    <div><b>02</b><p><strong>Easy Returns</strong><span>30-day return policy</span></p></div>
+    <div><b>03</b><p><strong>Secure Payment</strong><span>Protected checkout</span></p></div>
+    <div><b>04</b><p><strong>Sustainable</strong><span>Ethical & responsible</span></p></div>
+  </section>
+
+  <section class="collections section" id="collections">
+    <div class="section-intro" data-reveal><p class="eyebrow dark">Collections</p><h2>Designed for the modern wardrobe.</h2><a href="#catalog">View all collections</a></div>
+    <div class="collection-grid">
+      <a class="collection-card" href="#catalog" data-reveal><img src="./assets/collections/new-in.webp" alt="New in collection"><span><strong>New In</strong><small>Shop Now</small></span></a>
+      <a class="collection-card" href="#catalog" data-reveal><img src="./assets/collections/essentials.webp" alt="Essentials collection"><span><strong>Essentials</strong><small>Shop Now</small></span></a>
+      <a class="collection-card" href="#catalog" data-reveal><img src="./assets/collections/outerwear.webp" alt="Outerwear collection"><span><strong>Outerwear</strong><small>Shop Now</small></span></a>
+    </div>
+  </section>
+
+  <section class="story-band section">
+    <div class="story-photo" data-reveal><img src="./assets/editorial/shopping-bag.webp" alt="SORA shopping bag"></div>
+    <div class="story-copy" data-reveal><p class="eyebrow dark">Our philosophy</p><h2>Built on simplicity.<br>Driven by quality.</h2><p>Designed for women who value quiet confidence, timeless silhouettes and thoughtful craftsmanship. SORA creates modern essentials inspired by architecture, refined simplicity and everyday elegance.</p><button class="text-link story-trigger" data-modal-open="story"><span>Read our story</span><i aria-hidden="true">→</i></button></div>
+  </section>
+
+  <section class="catalog section" id="catalog">
+    <div class="catalog-head" data-reveal>
+      <div>
+        <p class="eyebrow dark">Bestsellers</p>
+        <h2>Tailored for<br>modern women.</h2>
+        <p class="catalog-lead">A considered edit of enduring silhouettes, refined accessories and everyday essentials.</p>
+      </div>
+      <button class="text-link catalog-view-all" type="button" data-view-all>View all products <span>↗</span></button>
+    </div>
+    <div class="filters" aria-label="Product filters"><button class="is-active" data-filter="featured">Featured</button><button data-filter="clothing">Clothing</button><button data-filter="bags">Bags</button><button data-filter="accessories">Accessories</button><button data-filter="all">All</button></div>
+    <div class="product-grid product-grid--featured" data-product-grid>
+      <!-- cards injected by JS -->
+    </div>
+  </section>
+
+  <section class="split-story section">
+    <div class="split-copy" data-reveal><p class="eyebrow dark">Our story</p><h2>Minimal by choice.<br>Meaningful by design.</h2><p>Inspired by architecture, minimalism and natural textures, SORA creates pieces that speak without words and stand the test of time.</p><button class="text-link" data-modal-open="discover">Discover SORA</button></div>
+    <div class="split-images"><img data-reveal src="./assets/editorial/story.webp" alt="SORA story portrait"><img data-reveal src="./assets/editorial/shopping-bag.webp" alt="SORA branded bag"></div>
+  </section>
+
+  <section class="lookbook section" id="lookbook">
+    <div class="lookbook-head" data-reveal>
+      <p class="eyebrow dark">Lookbook 2026</p>
+      <h2>Complete the look.</h2>
+      <p>Three considered combinations built around SORA essentials. Add an entire look or explore each piece individually.</p>
+    </div>
+    <div class="lookbook-grid">
+      <article class="lookbook-card" data-look="tailored" data-reveal>
+        <img src="./assets/products/tailored-blazer.webp" alt="Tailored black look">
+        <div><span>Look 01</span><h3>Quiet Tailoring</h3><p>Blazer · Trousers · Slingbacks</p><button type="button" data-add-look="tailored">Add full look</button></div>
+      </article>
+      <article class="lookbook-card" data-look="evening" data-reveal>
+        <img src="./assets/products/silk-slip-dress.webp" alt="Minimal evening look">
+        <div><span>Look 02</span><h3>After Dark</h3><p>Silk dress · Shoulder bag · Earrings</p><button type="button" data-add-look="evening">Add full look</button></div>
+      </article>
+      <article class="lookbook-card" data-look="soft" data-reveal>
+        <img src="./assets/products/colors/blazer-ivory.webp" alt="Ivory monochrome look">
+        <div><span>Look 03</span><h3>Soft Structure</h3><p>Ivory blazer · Trousers · Tote</p><button type="button" data-add-look="soft">Add full look</button></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="sustainability section" data-reveal>
+    <div><p class="eyebrow">Sustainability</p><h2>Considered materials.<br>Conscious choices.</h2><p>We choose responsible partners, reduce unnecessary packaging and design garments with longevity in mind.</p><button class="btn btn-light" data-modal-open="sustainability">Our commitment</button></div>
+  </section>
+
+  <section class="journal section" id="journal">
+    <div class="journal-image" data-reveal><img src="./assets/editorial/journal.webp" alt="SORA journal portrait"></div>
+    <div class="journal-copy" data-reveal><p class="eyebrow dark">Journal 01</p><h2>The art of quiet dressing.</h2><p>Notes on proportion, restraint and the lasting power of a refined wardrobe.</p><button class="text-link" data-modal-open="journal">Read article</button></div>
+  </section>
+
+  <section class="newsletter" id="contact">
+    <div><p class="eyebrow">Join our world</p><h2>Effortless style.<br>Every day.</h2></div>
+    <form data-newsletter><label class="sr-only" for="email">Email</label><input id="email" type="email" placeholder="Enter your email" required><button type="submit">Subscribe →</button></form>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer-brand"><a class="logo dark-logo" href="#top">SORA</a><p>© 2026 SORA Fashion Brand<br>All rights reserved.</p></div>
+  <div><h3>Shop</h3><a href="#catalog">All products</a><a href="#catalog">New in</a><a href="#catalog">Bestsellers</a></div>
+  <div><h3>Customer care</h3><a href="#contact">Shipping</a><a href="#contact">Returns</a><a href="#contact">Size guide</a></div>
+  <div><h3>About</h3><button data-modal-open="story">Our story</button><button data-modal-open="sustainability">Sustainability</button><button data-modal-open="journal">Journal</button></div>
+  <div><h3>Follow us</h3><a href="#">Instagram</a><a href="#">Pinterest</a><a href="#">Behance</a></div>
+</footer>
+
+<div class="modal" data-modal="story" aria-hidden="true">
+  <div class="modal-backdrop" data-modal-close></div>
+  <article class="modal-dialog modal-dialog--story" role="dialog" aria-modal="true" aria-labelledby="story-title">
+    <button class="modal-close" data-modal-close>Close ×</button>
+    <div class="story-modal-layout">
+      <div class="story-modal-content">
+        <p class="eyebrow dark">Our Story</p>
+        <p class="story-tagline">Minimal by choice. Timeless by nature.</p>
+        <h2 id="story-title">True elegance never<br>needs to be loud.</h2>
+        <div class="story-modal-copy">
+          <p>SORA was born from a simple idea: true elegance never needs to be loud.</p>
+          <p>In a world driven by fast trends and constant change, we believe in creating pieces that remain relevant season after season. Inspired by modern architecture, quiet luxury, and the strength of simplicity, every SORA collection is designed to become a lasting part of your wardrobe—not just another purchase.</p>
+          <p>We focus on clean silhouettes, premium fabrics, thoughtful tailoring, and timeless colors. Every detail is carefully considered to create clothing that feels effortless, refined, and confidently understated.</p>
+          <p>For us, fashion is more than appearance. It is a way of expressing confidence without excess, beauty without complication, and quality without compromise.</p>
+          <p>SORA is created for women who value intention over impulse, craftsmanship over trends, and timeless style over temporary fashion.</p>
+        </div>
+      </div>
+      <figure class="story-modal-image">
+        <img src="./assets/editorial/story-modal.webp" alt="Woman wearing a light SORA coat">
+      </figure>
+    </div>
+  </article>
+</div>
+<div class="modal" data-modal="discover" aria-hidden="true">
+  <div class="modal-backdrop" data-modal-close></div>
+  <article class="modal-dialog discover-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="discover-title">
+    <button class="modal-close" type="button" data-modal-close>Close ×</button>
+    <figure class="discover-modal-image">
+      <img src="./assets/editorial/discover-sora.webp" alt="SORA brand identity and packaging">
+    </figure>
+    <div class="discover-modal-caption">
+      <p class="eyebrow dark">Discover SORA</p>
+      <h2 id="discover-title">Curated for You</h2>
+    </div>
+  </article>
+</div>
+<div class="modal commitment-modal" data-modal="sustainability" aria-hidden="true">
+  <div class="modal-backdrop" data-modal-close></div>
+  <article class="modal-dialog commitment-dialog" role="dialog" aria-modal="true" aria-labelledby="sustainability-title">
+    <button class="modal-close commitment-close" type="button" data-modal-close>Close ×</button>
+    <div class="commitment-layout">
+      <div class="commitment-copy">
+        <p class="eyebrow dark">Our commitment</p>
+        <h2 id="sustainability-title">Designed with care.<br>Made to endure.</h2>
+        <p class="commitment-intro">At SORA, responsibility begins before a garment is made. We choose every material, partner and process with longevity, restraint and respect in mind.</p>
+        <div class="commitment-principles">
+          <section><span>01</span><h3>Considered materials</h3><p>Long-wearing fabrics selected for comfort, performance and a refined hand feel.</p></section>
+          <section><span>02</span><h3>Responsible partners</h3><p>We work with trusted makers who share our standards for quality and fair production.</p></section>
+          <section><span>03</span><h3>Less packaging</h3><p>Reduced single-use materials and restrained packaging designed to create less waste.</p></section>
+          <section><span>04</span><h3>Smaller collections</h3><p>Focused releases in considered quantities, created to be worn beyond a single season.</p></section>
+        </div>
+        <div class="commitment-note"><strong>Our promise</strong><p>Fewer pieces. Better choices. Clothing designed to remain relevant, useful and beautiful over time.</p></div>
+      </div>
+      <figure class="commitment-visual">
+        <img src="./assets/editorial/shopping-bag.webp" alt="SORA packaging in a minimal architectural setting">
+        <figcaption><span>SORA / Responsibility</span><span>Timeless essence</span></figcaption>
+      </figure>
+    </div>
+  </article>
+</div>
+<div class="modal journal-modal" data-modal="journal" aria-hidden="true">
+  <div class="modal-backdrop" data-modal-close></div>
+  <article class="modal-dialog journal-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="journal-title">
+    <div class="journal-progress" aria-hidden="true"><span data-journal-progress></span></div>
+    <button class="modal-close journal-close" type="button" data-modal-close>Close ×</button>
+
+    <header class="journal-hero">
+      <div class="journal-hero-copy">
+        <p class="eyebrow dark">SORA Journal / Issue 01</p>
+        <h2 id="journal-title">The art of quiet dressing.</h2>
+        <p class="journal-deck">A considered study of proportion, restraint, material and the lasting power of a refined wardrobe.</p>
+        <div class="journal-meta"><span>Editorial Notes</span><span>4 min read</span><span>Spring / Summer 2026</span></div>
+      </div>
+      <figure><img src="./assets/editorial/journal.webp" alt="SORA editorial portrait"></figure>
+    </header>
+
+    <div class="journal-body">
+      <aside class="journal-index" aria-label="Journal contents">
+        <span>In this issue</span>
+        <button type="button" class="is-active" data-journal-target="journal-quiet">Introduction</button>
+        <button type="button" data-journal-target="journal-wardrobe">01 Timeless Wardrobe</button>
+        <button type="button" data-journal-target="journal-materials">02 Fabric Stories</button>
+        <button type="button" data-journal-target="journal-notes">03 Styling Notes</button>
+      </aside>
+
+      <div class="journal-article">
+        <section id="journal-quiet" class="journal-section journal-section--lead">
+          <p class="journal-drop">Quiet dressing is not about disappearing. It is about removing distraction so shape, texture and movement can become visible.</p>
+          <p>At SORA, simplicity is never absence. It is precision. A clean shoulder line, the weight of a fabric, the fall of a trouser and the space between body and garment are all part of the design.</p>
+          <blockquote>“True elegance begins when nothing more needs to be added.”</blockquote>
+        </section>
+
+        <figure class="journal-wide-image"><img src="./assets/editorial/story-modal.webp" alt="Woman in a light SORA coat"><figcaption>Light, proportion and movement define the SORA silhouette.</figcaption></figure>
+
+        <section id="journal-wardrobe" class="journal-section">
+          <p class="eyebrow dark">01 / Building a timeless wardrobe</p>
+          <h3>Fewer pieces.<br>Better choices.</h3>
+          <p>A lasting wardrobe is built slowly. Begin with pieces that can be worn repeatedly and combined without effort: a tailored blazer, fluid trousers, a silk dress, a precise shirt and accessories with restrained character.</p>
+          <div class="journal-product-grid">
+            <figure><img src="./assets/products/colors/blazer-ivory.webp" alt="Ivory SORA blazer"><figcaption><b>The Blazer</b><span>Structure without rigidity.</span></figcaption></figure>
+            <figure><img src="./assets/products/colors/trousers-ivory.webp" alt="Ivory wide-leg trousers"><figcaption><b>The Trousers</b><span>Proportion in motion.</span></figcaption></figure>
+            <figure><img src="./assets/products/colors/shoulder-ivory.webp" alt="Ivory shoulder bag"><figcaption><b>The Bag</b><span>Quiet utility.</span></figcaption></figure>
+          </div>
+        </section>
+
+        <section id="journal-materials" class="journal-section journal-materials">
+          <div><p class="eyebrow dark">02 / Fabric stories</p><h3>Materials that become better with time.</h3></div>
+          <div class="material-list">
+            <article><span>01</span><h4>Silk</h4><p>Chosen for softness, movement and a subtle natural lustre.</p></article>
+            <article><span>02</span><h4>Wool</h4><p>Selected for structure, warmth and exceptional longevity.</p></article>
+            <article><span>03</span><h4>Cotton</h4><p>Breathable, precise and made for everyday repetition.</p></article>
+            <article><span>04</span><h4>Linen</h4><p>Relaxed texture that becomes more personal with wear.</p></article>
+          </div>
+        </section>
+
+        <div class="journal-quote-panel">
+          <img src="./assets/editorial/shopping-bag.webp" alt="SORA branded shopping bag">
+          <p>Luxury is not about being seen. It is about how something feels, how it fits, and how long it stays with you.</p>
+        </div>
+
+        <section id="journal-notes" class="journal-section">
+          <p class="eyebrow dark">03 / Styling notes</p>
+          <h3>Four moments.<br>One considered wardrobe.</h3>
+          <div class="styling-notes">
+            <article><span>Morning</span><h4>Soft tailoring</h4><p>Ivory trousers, a fluid shirt and minimal gold details.</p></article>
+            <article><span>Office</span><h4>Quiet structure</h4><p>A precise blazer balanced by wide-leg proportions.</p></article>
+            <article><span>Weekend</span><h4>Relaxed clarity</h4><p>Natural fabrics, clean lines and one practical bag.</p></article>
+            <article><span>Evening</span><h4>After dark</h4><p>A silk column dress with restrained accessories.</p></article>
+          </div>
+        </section>
+
+        <footer class="journal-ending">
+          <p class="eyebrow dark">SORA Journal</p>
+          <h3>Wear less.<br>Choose with intention.</h3>
+          <a href="#catalog" data-modal-close>Explore the collection <span>↗</span></a>
+        </footer>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="modal" data-modal="product" aria-hidden="true">
+  <div class="modal-backdrop" data-modal-close></div>
+  <article class="modal-dialog product-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="quick-view-title">
+    <button class="modal-close" type="button" data-modal-close>Close ×</button>
+    <div class="product-modal-layout">
+      <figure class="product-modal-media">
+        <img data-quick-image src="./assets/products/tailored-blazer.webp" alt="Tailored Blazer">
+      </figure>
+      <div class="product-modal-copy">
+        <p class="eyebrow dark">Quick View</p>
+        <h2 id="quick-view-title" data-quick-name>Tailored Blazer</h2>
+        <p class="quick-price" data-quick-price>$189.00</p>
+        <p class="quick-description" data-quick-description>A sharply tailored blazer with clean architectural lines.</p>
+        <div class="quick-colors">
+          <span>Available colors</span>
+          <div data-quick-colors></div><small class="quick-selected" data-quick-selected>Selected: Black</small>
+        </div>
+        <div class="quick-sizes" data-quick-sizes-wrap>
+          <span>Size</span><div data-quick-sizes></div><small data-quick-size-selected>Selected: M</small>
+        </div>
+        <div class="quick-buttons">
+          <button class="btn btn-dark quick-add" type="button" data-quick-add>Add to Bag</button>
+          <button class="quick-wish" type="button" data-quick-wish>Save ♡</button>
+        </div>
+        <a class="quick-details" data-quick-details href="./product.html?id=blazer">View full details ↗</a>
+        <div class="complete-look">
+          <div class="complete-look-head"><span>Complete the look</span><button type="button" data-add-full-look>Add full look</button></div>
+          <div class="complete-look-grid" data-complete-look></div>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+
+<aside class="wishlist-drawer" data-wishlist aria-hidden="true"><div class="cart-head"><h2>Saved Pieces</h2><button data-wishlist-close>Close ×</button></div><div class="wishlist-items" data-wishlist-items></div></aside><div class="wishlist-overlay" data-wishlist-overlay></div>
+
+<aside class="cart" data-cart aria-hidden="true"><div class="cart-head"><h2>Your Bag</h2><button data-cart-close>Close ×</button></div><div class="cart-items" data-cart-items></div><div class="cart-foot"><div class="cart-summary"><p><span>Subtotal</span><strong data-cart-total>$0.00</strong></p><p><span>Shipping</span><small>Calculated at checkout</small></p></div><button class="btn btn-dark cart-checkout" type="button">Checkout</button></div></aside><div class="cart-overlay" data-cart-overlay></div>
+<div class="toast" data-toast role="status" aria-live="polite"></div>
+</body>
+</html>
