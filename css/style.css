@@ -1231,3 +1231,35 @@ scrollbar-width:none;
   .product-modal-copy h2 { font-size: 36px; }
   .complete-look-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
 }
+
+/* ===== v20.1 desktop scroll repair ===== */
+@media (min-width: 769px) {
+  html {
+    height: auto !important;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto !important;
+  }
+
+  body {
+    position: static;
+    width: 100%;
+    height: auto !important;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto !important;
+    touch-action: auto;
+  }
+
+  main,
+  .page-shell {
+    height: auto !important;
+    min-height: 0;
+    overflow: visible !important;
+  }
+
+  /* Keep background locking only while an overlay is actually open. */
+  body.is-locked {
+    overflow: hidden !important;
+  }
+}

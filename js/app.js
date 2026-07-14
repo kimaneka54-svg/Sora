@@ -186,3 +186,36 @@ updateCart();updateWishlist();renderProducts();
     }
   });
 })();
+
+/* SORA v20.1 — recover desktop page scrolling from a stale lock state. */
+(() => {
+  const hasOpenLayer = () => Boolean(
+    document.querySelector('[data-modal].is-open, .cart.is-open, .wishlist-drawer.is-open, .mobile-menu.is-open')
+  );
+
+  const restorePageScroll = () => {
+    if (!hasOpenLayer()) {
+      document.body.classList.remove('is-locked');
+      document.documentElement.style.removeProperty('overflow');
+      document.body.style.removeProperty('overflow');
+      document.body.style.removeProperty('position');
+      document.body.style.removeProperty('top');
+      document.body.style.removeProperty('width');
+    }
+  };
+
+  document.addEventListener('DOMContentLoaded', restorePageScroll, { once: true });
+  window.addEventListener('load', restorePageScroll, { once: true });
+  window.addEventListener('pageshow', restorePageScroll);
+
+  // A cached page can briefly restore the old body class after pageshow.
+  setTimeout(restorePageScroll, 0);
+  setTimeout(restorePageScroll, 500);
+
+  const bodyObserver = new MutationObserver(() => {
+    if (document.body.classList.contains('is-locked') && !hasOpenLayer()) {
+      restorePageScroll();
+    }
+  });
+  bodyObserver.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+})();
