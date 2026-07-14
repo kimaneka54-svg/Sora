@@ -170,3 +170,19 @@ updateCart();updateWishlist();renderProducts();
   dialog.addEventListener('scroll', updateJournalState, { passive: true });
   updateJournalState();
 })();
+
+/* SORA v20 — mobile viewport and sheet reset */
+(function(){
+  const setViewportUnit=()=>document.documentElement.style.setProperty('--app-height',`${window.innerHeight}px`);
+  setViewportUnit();
+  window.addEventListener('resize',setViewportUnit,{passive:true});
+  window.addEventListener('orientationchange',()=>setTimeout(setViewportUnit,120),{passive:true});
+
+  const quickDialog=document.querySelector('[data-modal="product"] .product-modal-layout');
+  document.addEventListener('click',event=>{
+    const trigger=event.target.closest('[data-quick-view]');
+    if(trigger && quickDialog){
+      requestAnimationFrame(()=>{quickDialog.scrollTop=0});
+    }
+  });
+})();
